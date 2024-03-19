@@ -10,7 +10,7 @@ def convert_to_celsius(temp_fahrenheit):
 
 class Weather(object):
     def __init__(self):
-        self.API_KEY = "4432e3ca87b75ea276b4c5560f2373d3"
+        self.API_KEY = open("E:\Flask Practice\WeatherAPIKey.txt", "r").read()
         self.BASE_URL = "http://api.openweathermap.org/data/2.5/weather/"
 
     def get_weather(self, city):
